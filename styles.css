@@ -145,7 +145,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
 header h1 {
 	text-align: left;
-	font-size: 1.5rem !important;
+	font-size: 1.3rem !important;
 }
     /* Hide the desktop navigation menu by default on mobile */
     nav ul {
