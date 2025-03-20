@@ -214,6 +214,7 @@ header h1 {
 }
 
 
+
 /* Section Styles */
 section {
     padding: 100px 0;
@@ -308,6 +309,81 @@ section {
     }
 }
 
+/* Live Stream Button */
+.live-stream-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #8B572A; /* Subtle gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  
+}
+
+/* Hover Effect */
+.live-stream-button:hover {
+    background: #8B572A;
+   
+  
+}
+
+
+
+
+#live-stream {
+    background: #1C282B;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+#live-stream::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+    pointer-events: none;
+}
+#live-stream .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+#live-stream h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#live-stream p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+#live-stream audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+}
+
+
 
 /* About, Prayer Times, Services, and Contact Headings */
 #about h2, #prayer-times h2, #services h2, #contact h2 {
@@ -374,7 +450,81 @@ section {
     color: #666;
 }
 
-/* Contact Section */
+/* General Styling */
+#donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: #f4f4f4; /* Light background for contrast */
+}
+
+.donate-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.donate-container h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.donate-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Donation Box */
+.donation-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.donation-box p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Thank You Message */
+.thank-you {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-container {
+        padding: 30px;
+    }
+    .donation-box {
+        padding: 15px;
+    }
+    .donate-container h2 {
+        font-size: 24px;
+    }
+}
+
+
 #contact {
     background-color: #fff;
     padding: 100px 0;
