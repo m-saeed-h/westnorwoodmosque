@@ -142,7 +142,7 @@ nav ul li a:hover {
 }
 
 /* Full-Page Menu for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 header h1 {
 	text-align: left;
 	font-size: 1.3rem !important;
